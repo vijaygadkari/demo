@@ -1,0 +1,30 @@
+/*footer Styles*/
+//footer starts
+%textstyles {
+	color:$wcolor;
+	font-size: $fsize;
+	font-family: $font;
+}
+
+footer{
+	padding: 10px 0 20px;
+	border-top: 5px solid $secondary;
+	background-color: $dark;
+	text-transform: capitalize;
+	h3{
+		@extend %textstyles;
+		font-size: $fsize + 3;
+	}
+	.footer-list{
+		a{	@extend %textstyles;
+			line-height: 1.8em;
+			text-decoration: none;
+			&:hover{
+				color:$wcolor;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+//footer ends

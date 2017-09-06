@@ -1,0 +1,187 @@
+.banner-image{
+	background: url("../images/showcase.jpg") no-repeat top center;
+	height: 400px;
+}
+
+.primary{
+	color: $primary;
+}
+
+.lead {
+	color: $fcol;
+}
+
+.break {
+	display: block;
+}
+
+strong {
+	font-weight:bold;
+}
+
+.download-images{
+	margin-left: 1px;
+	li:first-child{
+		padding: 0 1px;
+	}
+	li:last-child{
+		padding: 0;
+	}
+}
+.banner-content{
+	text-align: center;
+	padding: 120px 0;
+	font-family:$font;
+	h2{
+		font-size: $fsize + 21;
+	}
+}
+
+.section-light {
+	@include bgc($light);
+	padding: 32px;
+}
+
+.search-field{
+	width: 80% !important;
+    height: 50px;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    border: 2px solid $primary;
+	&::-webkit-input-placeholder{
+		color:$fcol;
+		font-family: $font;
+		font-size: 18px;
+	}
+}
+.search-btn{
+	padding: 0;
+	margin-left: -3px;
+	width: 50px;
+	border-radius: 0;
+	vertical-align: middle;
+	border: 0;
+}
+
+.section-primary{
+	@include bgc($primary);	
+	padding: 30px;
+}
+
+.section-primary-iphone{
+	@extend .section-primary;
+	padding-bottom: 0;
+	img{
+		width: 70%;
+	}
+}
+
+.section-primary-a{
+	@extend .section-primary;
+	border-top: 4px solid $secondary;
+	color:$wcolor;
+	h2{
+		margin-top: 0;
+	}
+}
+
+.section-primary-b{
+	@extend .section-primary;
+	border-bottom: 4px solid $secondary;
+	color:$wcolor;
+	h2{
+		margin-top: 0;
+	}
+}
+
+.padding-top{
+	padding: 30px 0;
+}
+
+.no-padding-top{
+	padding-top:0px;
+}
+
+.mac-image{
+width: 100%;
+}
+
+.imac-features {
+
+	h3{
+		padding-top:10px;
+		// padding-bottom:20px;
+		font-family: $font;
+		font-size: $fsize+15;
+		color:$fcol;
+	}
+
+	@extend .list-features;
+	.list-features + .btn{
+		margin-top: 15px;
+		@include bgc($primary);
+		color: $wcolor;
+		border:2px solid;
+	}
+}
+
+.imac{
+	padding:40px 0;
+}
+
+.iphone-features{
+	color:$wcolor;
+	h3{
+		font-size: $fsize+15;
+		line-height: 1.7em;
+		border-bottom: 1px solid;
+	}
+	p{
+		padding-top: 10px;
+		padding-bottom: 20px;
+		font-size: $fsize+6;
+		margin: 0;
+		
+	}
+	 .btn-default {
+		@include bgc($wcolor);
+		color: #333;
+		border: 0px;
+	}
+}
+
+.section-light-a{
+	@extend .section-light;
+	padding: 90px 0 30px;
+}
+
+
+.secondary-a{
+	@extend .secondary;
+	border-bottom:2px solid;
+	font-size: 30px;
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+}
+
+.blockquote{
+	h2{
+		font-size:36px;
+		margin-bottom: 10px; 
+	}
+}
+
+.section-primary-c {
+	color:$fcol;
+	h2{
+		padding-bottom: 10px;
+		margin-top: 0;
+		margin-bottom: 20px;
+		border-bottom: 2px solid $primary;
+	}
+	p{
+		font-size: $fsize;
+		line-height: 1.7em;
+	}
+}

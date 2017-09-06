@@ -1,0 +1,18 @@
+.list-features{
+	padding-top: 18px;
+	li{
+		width: 80%;
+		color: $fcol;
+		font-size: 18px;
+		line-height: 2.9em;
+		border-bottom: 1px solid #cccccc;
+		&:last-child{
+			border-bottom:0px;
+		}
+	}
+	.fa{
+		color:$primary;
+		font-size: 40px;
+		margin-right: 5px;
+	}
+}

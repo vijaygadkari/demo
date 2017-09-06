@@ -1,0 +1,46 @@
+/*header Styles*/
+//header starts
+
+.navbar{
+	width: 90%;
+	margin: 0 auto;
+	border:1px solid $light;
+	background-color: $wcolor !important;
+	// padding: 0 0 1px 0;
+}
+
+.main-header {
+	a{
+		padding: 21px 15px;
+		font-family: $font; 
+		color:$primary;
+		font-size: $fsize + 5;
+		letter-spacing: -0.5px;
+	}
+	li{
+		a{
+			padding: 21px 15px;
+			font-family: $font; 
+			color:$primary;	
+			font-size: $fsize + 5;	
+			letter-spacing: -0.5px;
+			&:hover{
+				background-color: $primary;
+				color: $wcolor;
+			}
+			&:focus{
+				background-color: $primary;
+				color: $wcolor;
+			}
+		}
+		&.active{
+			a{
+				background-color: $primary;
+				color: $wcolor;
+			}
+		}
+
+	}
+
+}
+//header ends
