@@ -56,42 +56,114 @@
 	}
 }
 
-.defalut-col-blog{
-	h3{
+
+.posts , .right-section{
+	&>h3{
+		padding-bottom:9px;
+		font-size: 30px;
+		color: $fcol;
 		margin-top: 30px;
-		padding-bottom: 9px;
-	    margin: 40px 0 20px;
-	    border-bottom: 1px solid #eee;
+		border-bottom:1px solid #eee;
 	}
 }
 
-.post{
-	border-top: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	padding: 15px;
+.right-section{
+	&>h3{
+		margin-bottom: 20px;
+	}
+	.nav-tabs{
+		a{
+			color: $primary;
+			font-size: $fsize;
+		}
+	}
+}
+
+.post {
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    padding: 20px 15px;
+	margin-top: 20px;
+	h3{
+		margin-top: 0;
+		padding-bottom: 9px;
+	    border-bottom: 1px solid #eee;
+		font-size: 30px;
+		color: $fcol;
+		margin-bottom: 20px;
+	}
 
 	img {
 		width: 200px;
-		margin-right: 15px;
 	    vertical-align: middle;
+		margin-right: 15px;
+	}
+	p{
+		font-size: $fsize;
+		margin: 0;
+		color: $fcol;
+		line-height: 1.7em;
+		padding-bottom: 5px;
+	}
+	&+p{
+		margin: 0;
+	}
+}
+
+.post-meta{
+	background: #f3f3f3;
+	padding: 12px 5px;
+	font:$font;
+	font-size: $fsize;
+	color:$fcol;
+	border: 1px solid #cccccc;
+	margin-bottom: 20px;
+	margin-left: 0;
+	a{
+		color: $primary;
+	}
+}
+
+
+%tab-content {
+
+	margin-bottom: 25px;
+	padding: 20px 10px;
+	border-radius: 4px;
+}
+
+@mixin tab-colors($nav,$content){
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus , .tab-content{
+		background: $nav;
+		color:$content;
+	}
+	.tab-content {
+		background-color: $nav;
+		@extend %tab-content;
+		color: $content;	
+		h3{
+			margin: 0;
+			margin-bottom: 10px;
+			font-size: 	24px;
+		}
+		p{
+			line-height: 1.7em;
+			font-size: $fsize;
+		}
 	}
 
 }
-.post-meta{
-	background: #f3f3f3;
-	padding: 10px 10px 10px 10px;
-	border: 1px solid #cccccc;
-	margin-bottom: 20px;
+
+.blog-tabs{
+	@include tab-colors($light,$fcol);
 }
 
-.row{
-	
+.services-tab{
+	@include tab-colors($primary,$wcolor);
 }
 
 .tab-pane{
 	   .active{
-	   		background: #e4eef2;
 	   		color: #666666;
 	   		display: block;
 	   }
@@ -103,32 +175,130 @@
 }
 
 .page-header{
-	padding: 15px 5px 15px 10px;
+	padding: 15px 0px  15px 10px ;
 	background: #00aff0;
 	color: #ffffff;
 	margin: 0;
-	font-size: 18px;
 	h3{
+		font-size: 18px;
 		padding:0px; 
+		margin: 0;
 	}
 }
 
 .page-content{
+	margin-top: -1px;
 	border: 1px solid #00aff0;
-	padding: 10px;
+	padding:10px;
 	width: 100%;
 	height: 100%;
+
+	iframe{
+		height: 208px;
+		width: 100%;
+	}
 }
 
 .comments{
 	margin: 0;
 	padding: 0;
 	li{
-		padding: 10px 0 5px ;
+		padding: 10px 0px 5px ;
 		border-bottom: 1px solid #cccccc;
 		overflow: auto !important;
+		color:$fcol;
+		line-height: 1.7em;
+		font-size: $fsize;
 		img{
 			width: 100px;
 		}
+	}
+}
+.map{
+	margin:35px 0px 40px;
+}
+
+.contact{
+	color: $fcol;
+	font-size:$fsize;
+	h2{
+		font-size: 32px;
+	}
+}
+ address{
+ 	padding-left:40px;
+ 	h5{
+ 		font-size: 18px;
+ 		padding-bottom: 20px;
+ 		margin-top: 0px;
+ 		margin-bottom: 20px;
+ 		border-bottom: 1px solid $light;	
+ 	}
+ 	span{
+ 		display: block;
+ 	}
+ }
+
+.col-primary{
+ 	 font-size: 30px;	
+	 padding-bottom: 10px;
+	 margin-top: 0;
+	 margin-bottom: 20px;
+	 border-bottom: 2px solid #00aff0;
+}
+.form-group{
+	textarea{
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.service-section{
+	margin: 30px 0; 
+}
+
+.service-defulte{
+	margin-top: 30px;
+	p{
+		font-size: $fsize;
+		font-family: $font;
+		line-height: 1.7em;
+		color: $fcol;
+	}
+}
+
+.form-section{
+	padding: 15px;
+}
+
+.primarybg-section{
+	padding: 50px 30px;	
+	@include bgc($primary);
+	color: $wcolor;
+	h3{
+		font-size: 30px;
+		line-height: 1.7em;
+		border-bottom: 1px solid;
+	}
+}
+.icon-div{
+	padding: 15px;
+    margin-bottom: 15px;
+	i{
+
+		font-size: 40px;
+	}
+	
+}
+
+.icon-para{
+	h4{
+		font-size: 24px;
+		font-family: $font;
+	}
+	span{
+		display: block;
+		font-family: $font;
+		font-size: $fsize;
 	}
 }
