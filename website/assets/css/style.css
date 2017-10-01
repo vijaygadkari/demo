@@ -1,0 +1,397 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	/*background-color: grey;*/
+}
+body{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebecf1+0,ebecf1+0,ffffff+46,ffffff+61,ebecf1+100 */
+	background: rgb(235,236,241); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(235,236,241,1) 0%, rgba(235,236,241,1) 0%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 61%, rgba(235,236,241,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(235,236,241,1) 0%,rgba(235,236,241,1) 0%,rgba(255,255,255,1) 46%,rgba(255,255,255,1) 61%,rgba(235,236,241,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(235,236,241,1) 0%,rgba(235,236,241,1) 0%,rgba(255,255,255,1) 46%,rgba(255,255,255,1) 61%,rgba(235,236,241,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebecf1', endColorstr='#ebecf1',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+header{
+	text-align: center;
+}
+
+.nav{
+	border-radius: 35px;
+    padding: 0px;
+	background-color: #fff;
+	color: #333; 
+}
+
+.nav-ul{
+	padding: 0px;
+}
+
+.nav-ul li{
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: 800;
+	
+}
+
+.nav-ul li:hover{
+	background-color: #3f4345;
+	color: #fff;
+
+}
+
+.actived{
+	background-color: #3f4345;
+	color: #fff;
+}
+
+.galaxy-img{
+	padding: 0px;
+	margin: 0px;
+	height: 500px;
+}
+.galaxy-img img{
+	/*background: url(../assets/images/galaxy.png) no-repeat cover; */
+	height: 100%;
+	width: 100%;
+}
+
+.galaxy-para{
+	color: #8e8d8d;
+	padding: 0px;
+	margin: 0px;
+}
+
+.galaxy-para h3{
+	padding: 60px 0 0 0;
+	font-size: 30px;
+	letter-spacing: 1.5px;
+}
+
+.galaxy-para h3:first-letter{
+	text-transform: uppercase;
+}
+
+.galaxy-para h4{
+	font-size: 70px;
+	letter-spacing: 2.5px;
+}
+
+.galaxy-para h4 span{
+	font-weight: 500;
+	font-size: 95px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #2274b2;
+	text-shadow: 5px 5px 10px #fff, 0 0 0.3em #fff;
+}
+
+.galaxy-para p{
+	font-size: 24px;
+    width: 86%;
+    padding-bottom: 60px;
+    color: #b2b2b2;
+}
+
+.galaxy-para p:first-letter{	
+	text-transform: uppercase;
+}
+
+.galaxy-para img{
+	width: 100%;
+
+}
+
+.border-div{
+	text-align: center;
+}	
+
+.shadow{
+	background: url(../images/nav-shadow.png) no-repeat;
+}
+
+.section-default{
+	background:url("../images/headmirror.png") no-repeat;
+	background-position: 100px 100px;
+	background-color: #fff;
+	padding: 20px 40px;
+
+}
+
+.section-default h3{
+	font-size: 90px;
+	letter-spacing: 5px;
+	color: #868686;
+}
+
+.capital-span{
+	font-weight: 800;
+	display: inline-block;
+	color:#2078ba;
+	letter-spacing: -5px;
+}
+
+.capital-span:first-letter{
+	text-transform: uppercase;
+}
+
+.section-default-div{
+	font-size: 18px;
+	color: #595959;
+}
+
+.section-default-div p{
+	padding: 10px 0 20px 0;
+}
+
+.section-default-div img{
+	height: 35px;
+
+}
+
+.section-default-img{
+	position: relative; 
+}
+
+.section-default-img img{
+	height: 450px;
+	position: absolute;
+	top: -135px;
+	right: -10px;
+}
+
+.primary-h3{
+	position: relative;
+}
+.primary-h3 p{
+	padding: 0 0 0 10px;
+	position: absolute;
+	display: inline-block;
+	font-size: 95px;
+	color: #2078ba;
+}
+
+.primary-h3 p span{
+	text-transform: uppercase;
+	color: #595959;
+}
+
+.primary-h3 p:first-letter{
+	text-transform: uppercase;
+}
+
+.primary-h3 img{
+	height: 95px;
+
+}
+
+.section-second {
+
+}
+
+.section-second >p{
+	padding: 0 111px 0 105px;
+	font-size: 22px;
+	color:#595959;
+}
+.center{
+	text-align: center;
+}
+
+.section-second-fig{
+	padding: 40px 0;
+}
+
+.section-second-fig img{
+	height: 550px;
+}
+
+.slider-art-head{
+	display: block;
+	font-size: 100px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-shadow: 5px 5px 5px  #fff, 0 0 0.3em #fff; 
+}
+
+.slider-art-head span{
+	color: #868686;
+	text-transform: uppercase;
+}
+
+.slider-art-li{
+
+}
+
+.slider-art-li >img{
+	height: 425px;
+	width: 63%;
+}
+
+.slider-art-li>h4{
+	text-align: left;
+	padding: 0 10px 0 60px;
+	color: #2078ba;
+	font-size: 28px;
+}
+
+.slider-art-li>h4:first-letter{
+	text-transform: uppercase;
+}
+
+.slider-art-li p{
+	font-size: 18px;
+	text-align: left;
+	padding: 0 10px 0 60px ;
+}
+
+.slider-art-li a{
+	display: block;
+	text-align: left;
+	padding: 0 10px 0 60px ;
+}
+
+.slider-art-li a img{
+	margin: 20px 0 ;
+	height: 38px;
+
+}
+
+.endline-fig{
+	
+	padding: 20px 0 40px 0;
+}
+
+.endline-fig img{
+	text-align: center;
+}
+
+.donwload-icon a{
+	padding: 30px 0; 
+	text-decoration: none;
+    display: block;
+    text-align: center
+}
+
+.donwload-icon a img{
+	height: 100px;
+}
+
+.last-div{
+	padding: 20px 0;
+	background:url(../images/Layer28.png) no-repeat; 
+	background-size: cover;
+}
+
+.last-div h3{
+	-webkit-border-image: url(../images/Layer58.png) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../images/Layer58.png) 30 round; /* Opera 11-12.1 */
+	border-image: url(../images/Layer58.png) 30 round;
+	border-bottom-style: dotted; 
+	text-transform: capitalize;
+	color: #fff;
+	padding-bottom: 10px;
+	margin-bottom: 20px; 
+	font-size: 28px;
+
+}
+
+
+.last-nav-ul{
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.last-nav-ul li{
+	padding: 5px 0;
+}
+
+.map-fig img{
+	height: 100%;
+	width: 100%;
+}
+
+address {
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.email-div{
+	color: #fff;
+}
+
+.email-div a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.email-div:first-letter{
+	text-transform: uppercase;
+}
+
+.form-row{
+	color: #fff;
+	padding: 8px 0;
+	position: relative;
+}
+
+.form-row label{
+	font-size: 16px;
+}
+
+.form-row input{
+	border: none;
+    border-radius: 4px;
+    height: 36px;
+}
+
+.form-row textarea{
+	height: 148px;
+	border-radius: 4px;
+}
+
+.form-row button{
+	border: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 5px 10px;
+    border-radius: 5px;
+    background: #fff;
+    color: #328fb7;
+}
+
+footer{
+	padding: 10px 0 30px 0;
+	background-color: #000107;
+	color: #fff;
+}
+
+footer p{
+	padding: 0 0 0 43px;
+	font-size: 18px;
+
+}
+
+footer p:first-letter{
+	text-transform: uppercase;
+}
+
+.footer-ul li{
+	padding: 0px 0px;
+}
+
+.Websitefoot{
+	padding: 2px 0 0 105px;
+}
+
+.Websitefoot img{
+	height: 22px;	
+}
+.Websitefoot > div{
+	padding: 2px 0 0 105px;
+	
+}

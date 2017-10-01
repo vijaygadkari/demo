@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toggle</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;	
+		}
+		.main
+			{	background-color: grey;
+				width: 80%;
+				padding: 20px;
+				margin: auto;
+				justify-content:space-around;	
+				
+			}
+		#oneb,#twob,.onep,.twop{
+			display:none;
+		}
+		#oneb:checked ~ .onep{
+			display: inline-block;
+			transition: 15s;
+			}
+		#oneb:checked ~ .l1:before,#twob:checked ~ .l2:before{content: "-";}	
+		#twob:checked ~ .twop{
+			display:  inline-block;
+			opacity: 0;
+			animation: show 2s ease-in-out forwards;
+			}
+		
+		.l1:before,.l2:before{
+			content: "+";
+			display: inline-block;
+			font-size: 40px;
+		} 
+		@keyframes show{
+			0%{
+				opacity: 0;
+				}
+			100%{
+				opacity: 1;
+				}	
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<div class="one">
+		<input type="checkbox" name="button" id="oneb" checked>
+		<label for="oneb" class="l1">
+				click to xpand
+		</label>
+		<br>
+		<p class="onep">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		
+		<input type="checkbox" name="button" id="twob">
+		<label for="twob" class="l2">
+			click to xpand
+		</label>
+		<p class="twop">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		</div>
+	</div>
+</body>
+</html>

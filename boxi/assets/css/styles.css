@@ -101,15 +101,19 @@ article>button{
 .scocial_media_icons> li >a >img{
 	width: 207px;
 }
+
 .Pinterest{
 	margin-right: 20px;
+
 }
 .Twitter{
 	margin-right: 20px;
 }
-.container{
-	margin-right: 20px;
+.rss{
+	margin-right: 20px; 
 }
+
+
 p{
 	color:#ffffff;
 }

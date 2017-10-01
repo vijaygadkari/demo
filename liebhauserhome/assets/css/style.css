@@ -1,0 +1,41 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+article{
+	height: 10px;
+}
+
+.searchbar{
+	display: inline-block;
+
+	margin: 10px;
+	font-size: 15px
+}
+.searchbar p,form,img{
+	display: inline-block;	
+}
+
+.searchbar img{
+	height: 15px;
+
+}
+.searchbar p{
+	font-family: sans-serif;
+}
+
+.nav-ul{
+	list-style: none;
+	display: inline;
+}
+
+.nav-ul li{
+	display: inline;
+	padding: 30px;
+	font-size: 32px;	
+}
+figure img{
+	height: 100vh;
+	width: 100%;
+}
