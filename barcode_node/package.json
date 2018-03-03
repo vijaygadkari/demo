@@ -1,0 +1,19 @@
+{
+  "name": "barcode_node",
+  "version": "1.0.0",
+  "description": "barcode prn files and data stores by this project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vijay",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "joi": "^13.1.2",
+    "mysql": "^2.15.0"
+  }
+}

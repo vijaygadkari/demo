@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+textarea,input,input::-webkit-input-placeholder {
+    font-size: 12px ; 
+    /*line-height: 3 ;*/
+
+}
+
+.table td{
+    padding: 0px 0px;
+}
+textarea{
+    resize: none;
+     width: 125px;
+    border:0px;
+    /*grid-row: 2;*/
+}
+#Product_GTIN1,#Product_GTIN2{  
+    display: inline-flex;
+    width: 30px;
+}
+
+tbody > tr:first-child{
+    background-color: #fff !important;
+}
+
+.table th{
+    font-size: 1em;
+
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.table td{
+    text-align: center;
+    /*padding: 5px 0px;*/
+    /*vertical-align: middle;*/
+}
+input[type="date"]{
+    width: 120px;
+    
+}
+input:focus{
+    /*outline: 0px;*/
+    border: 0px;
+    box-shadow: none;
+}
+
+input{
+    border:0px;
+    padding: 5px;
+    width: 70px;
+}
+
+#Count_of_Barcode{
+	width: 50px;  
+}
